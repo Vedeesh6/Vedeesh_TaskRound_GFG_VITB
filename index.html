@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GFG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto+Mono&family=Unbounded&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@300;400;500&display=swap';"
+        rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/4ab574518e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <style>
+        body {
+            color: black;
+            background-color: #e0fcdd;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            text-align: center;
+            padding: 2%;
+            overflow: hidden;
+        }
+
+        .left {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .about img {
+            margin-top: 10%;
+            margin-right: 10%;
+            width: 60%;
+            height: 30%;
+        }
+
+        .right h3 {
+            font-family: "Aboreto", cursive;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            letter-spacing: 1.75px;
+            text-transform: capitalize;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .right p {
+            padding-right: 5%;
+        }
+
+        .abc {
+            /* font-family: sans-serif; */
+            font-family:  'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 228%;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        .abc:hover {
+            display: flex;
+            /* transform: scale(1.0); */
+            transition: all 1s;
+            border-radius: 5px;
+            position: relative;
+            animation: himank 0.5s ease-in 0s 1 forwards alternate;
+            /* transform: skew(-0.5deg); */
+            /* box-shadow: inset 0px 0px 5px rgb(171, 166, 166); */
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .aim {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            align-items: center;
+            padding: 2%;
+            overflow: hidden;
+        }
+
+        .aim img {
+            margin-top: 10%;
+            margin-right: 10%;
+            margin-left: 55px;
+            width: 65%;
+            height: 80%;
+        }
+
+        #aa {
+            margin-left: 5%;
+        }
+
+        .left img {
+            transition: all 0.5s ease-out;
+        }
+
+        .us:hover {
+            transform: scale(1.05);
+            transition: 1s;
+        }
+
+        .left img:hover{
+            /* transform: rotate(360deg); */
+            transform: scale(1.10);
+        }
+
+        .footer-logo {
+  height: 5vh;
+  width: 2vw;
+}
+
+    #domain{
+        background-color: rgb(214, 252, 205);
+    }
+
+.footer--name {
+    /* padding-left: 1rem; */
+    padding-right: 1rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 26px;
+    justify-content: center;
+  }
+
+  .contact-footer {
+    margin-left: 13rem;
+  }
+    </style>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #e0fcdd;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="#"><img src="Logo.png" width="80px" style="margin-right: 412px;"></a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Banner1.png" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="Banner2.png" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <!-- Content here -->
+        <div id="about">
+            <div class="about">
+                <div class="left" data-aos="fade-right">
+                    <img src="Logo.png" alt="" />
+                </div>
+    
+                <div class="right">
+                    <h3 class="us" data-aos="fade-down">About Us</h3>
+                    <p class="abc" data-aos="fade-left">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestias eos voluptate omnisvoluptates odit soluta
+                        error reprehenderit perspiciatis. Eum doloremque illonostrum ipsam veritatis,in id aspernatur adipisci! Neque modi
+                        officia rem est excepturi. Impedit quod autem incidunt consequuntur, corporis provident minima ullam accusantium 
+                        delectus doloribus cupiditate et saepe voluptatem dignissimos quos magnam vitae harum laboriosam nihil optio? 
+                        Minima eaque sunt ipsum aliquam sapiente animi dolores assumenda voluptatum, ex accusantium ipsam sed nulla
+                        illonostrum suscipit minus? Libero perferendis a non distinctio voluptate quia alias quos ipsa reiciendis, 
+                        deserunt voluptas laudantium magnam voluptates, ex,animi minus explicabo veritatis autem atque.
+                    </p>
+                </div>
+            </div>
+            <hr />
+        </div>
+    
+        <div class="aim">
+            <div class="right">
+                <h3 class="us" data-aos="fade-down">Our Aim</h3>
+                <p class="abc" id="aa" data-aos="fade-right">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum sednecessitatibus minima iure ipsam amet, maiores 
+                    veniam repellat ducimus quasi recusandae consectetur atque provident fugit. Quod est impedit repellat labore 
+                    reiciendis hic earum iste reprehenderit qui! Porro accusamus dolor sequi ducimus, consectetur error, eaque commodi ad
+                    tempore beatae magni vitae aut quis ab dicta, provident exercitationem! Doloribus nulla exercitationem totam cumque 
+                    maxime soluta, aspernatur provident. Nostrum, quisquam fugiat accusamus veniam rem eos culpa qui sint consectetur
+                    officiis, repudiandae dolore possimus tempore nulla sit voluptate, modi ex temporibus? Maiores atque, laborum tenetur
+                    provident facilis aut iure repudiandae! Nihileaque distinctio ullam.
+                </p>
+            </div>
+
+            <div class="left" data-aos="fade-left">
+                <img src="Logo.png" alt="" />
+            </div>
+      </div>
+    </div>
+
+    <!-- <hr style="color: black;"> -->
+
+    <!-- Our Domain -->
+    <div id="domain">
+        <section class="domain_name" id="our-domains">
+            <div class="">
+                <header>
+                    <div class="pricing-header p-3 pb-md-4 mx-auto text-center " id="cccc" >
+                        <h1 class="display-4 fw-normal" style="margin-top: 30px;">Our Domains</h1>
+                        <p class="fs-5 text-dark"  id="dddd" >We believe in
+                            hands on
+                            learning
+                            and freedom of
+                            work.
+                            Hence all of our core
+                            committee members.
+                            <br>
+    
+                            are provided with selection of five domains to find where their passion lies.
+                        </p>
+                        <!-- <hr> -->
+                    </div>
+                </header>
+    
+            </div>
+    
+    
+    
+            <main>
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-3" id="aaaa" >
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm cards">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal ha mt-3">WEB DEVELOPMENT</h4>
+                                </div>
+                                <div class="card-body" style="background-color: #e0fcdd;">
+                                    <p class="pa">This domain provides students with a platform where they are
+                                        encouraged to discover,
+                                        explore and
+                                        learn more about technology.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm cards">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal ha mt-3">EVENT MANAGEMENT</h4>
+                                </div>
+                                <div class="card-body" style="background-color: #e0fcdd;">
+                                    <p class="pa">
+                                        This domain provides students with a platform where we bring out ideas to life
+                                        through engaging and impactful events.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm cards ">
+                                <div class="card-header py-3 ">
+                                    <h4 class="my-0 fw-normal ha mt-3">PR and OUTREACH</h4>
+                                </div>
+                                <div class="card-body" style="background-color: #e0fcdd;">
+                                    <p class="pa">This domain provides students with a platform where they
+                                        can connect with the community and build relationships with the outside world.
+                                    </p>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="row row-cols-1 row-cols-md-3  text-center " id="bbbb" >
+                        <div class="col">
+                            <div class="card mb-5 rounded-3 shadow-sm cards">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal ha mt-3">DESIGN and VIDEOGRAPHY</h4>
+                                </div>
+                                <div class="card-body" style="background-color: #e0fcdd;">
+                                    <p class="pa">This domain promotes and instigates curiosity and interest
+                                        regarding graphics and
+                                        media design
+                                        and overall enriching the creativeness of the club.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm cards">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal ha mt-3">SOCIAL MEDIA</h4>
+                                </div>
+                                <div class="card-body" style="background-color: #e0fcdd;">
+                                    <p class="pa">
+                                        This group of students specialize in the digital media world and
+                                        explore their
+                                        creativity in the
+                                        various technical aspects of the media world.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm  cards">
+                                <div class="card-header py-3 -primary">
+                                    <h4 class="my-0 fw-normal ha mt-3">CONTENT</h4>
+                                </div>
+                                <div class="card-body" style="background-color: #e0fcdd;">
+                                    <p class="pa">
+                                        This domain provides exclusive exposure to students in developing
+                                        intellectual
+                                        writing
+                                        capabilities and provides authentic content for the club.
+                                    </p>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </main>
+    
+    
+    
+        </section>
+    
+    </div>
+
+    <!-- Contact -->
+    <div class="row justify-content-evenly pt-2 pb-5" style="background-color: #f1f1f1;">
+        <div class="col-md-5 mt-5">
+            <h3 class="mb-3">Contact Form</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name1">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="col-md-5 mt-5">
+            <h3 class="mb-3">Address</h3>
+            <p>VIT Bhopal <br>
+                <!-- <i class="bi bi-telephone"></i> : 9999988888</p> -->
+            Kothri Kalan, Sehore, <br>
+            Madhya Pradesh, India <br>
+            Pin Code - 466114</p>
+            <p> <i class="bi bi-telephone"></i></p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.535869806468!2d76.8490984147705!3d23.077471484925244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ce9ceaaaaaaab%3A0xa224b6b82b421f83!2sVellore%20Institute%20of%20Technology%20-%20VIT%20Bhopal!5e0!3m2!1sen!2sin!4v1679897865513!5m2!1sen!2sin"
+                style="width: 100%;" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <div class="row justify-content-evenly bg-dark text-white pt-2 pb-5">
+        <div class="col-md-3 pt-3">
+            <a href=""><img src="Logo.png" alt="" style="width: 200px; margin-top: 20px;"></a>
+            <h4 class="pb-1" style="margin-left: 45px; margin-top: 20px;">GFG VITB</h4>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, iusto hic perspiciatis inventore quo. Autem, qui! Possimus, nemo tenetur.</p> -->
+        </div>
+        <div class="col-md-3 pt-3" style="margin-top: 25px;">
+            <h4 class="pb-1">Links</h4>
+            <a href="#" class="link-light text-decoration-none">Home</a><br>
+            <a href="#" class="link-light text-decoration-none">About US</a><br>
+            <a href="#" class="link-light text-decoration-none">Our Team</a><br>
+            <a href="#" class="link-light text-decoration-none">Our Clients</a><br>
+        </div>
+        <div class="col-md-3 pt-3" style="margin-top: 25px;">
+            <h4 class="pb-1">Contact Us</h4>
+            <p>VIT Bhopal <br>
+                <!-- <i class="bi bi-telephone"></i> : 9999988888</p> -->
+            Kothri Kalan, Sehore, <br>
+            Madhya Pradesh, India <br>
+            Pin Code - 466114</p>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row bg-secondary text-center text-white pt-3">
+        <div class="col-12">
+            <p>&copy; Copyright 2023 @GFG VITB. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+            // delay: 500,
+        });
+    </script>
+    <script src="Blog_swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  </body>
+</html>
